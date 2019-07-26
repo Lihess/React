@@ -7,3 +7,7 @@
 
 WebPack : 파일 변형을 위한 묘듈번들러, 나중에 함 봐보기!!
     > 어려우니까 우리는 create-react-app으로!
+
+class => classname
+
+컴포넌트는 각기 다른 함수와 메소드를 가지며, 항상 보여주는 함수인 render()을 가짐
