@@ -1,2 +1,2 @@
 # React
-초심 React !
+초보자 React !
