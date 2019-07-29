@@ -6,7 +6,7 @@
     align-items: flex-start;
     flex-wrap : wrap;
     margin-bottom: 50px;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; /*텍스트가 많은 경우 생략기호로 보여주기*/
     padding : 0 20px;
     border-radius: 5px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
@@ -18,9 +18,8 @@
     box-sizing: border-box;
     text-overflow: ellipsis;
 }
-.Movie_Column img{
-    max-width: 200px;
-    width : 100%;
+.Movie img{
+    max-width: 100%;
     position: relative;
     top : -20px;
     margin-right: 10px;
@@ -41,7 +40,9 @@
 }
 
 .Movie_Column .Move_Synopsis{
-    color : #B4b5bd;
+    text-overflow: ellipsis;
+    color:#B4B5BD;
+    overflow: hidden;
 }
 
 .Movies h1{
@@ -49,4 +50,23 @@
     font-weight: 600;
 }
 
+@media screen and (min-width:320px) and (max-width:667px){
+    .Movie{
+        width:100%;
+    }
+}
 
+@media screen and (min-width:320px) and (max-width:667px) and (orientation: portrait){
+    .Movie{
+        width:100%;
+        flex-direction: column;
+    }
+    .Movie img{
+        top:20px;
+        left:0;
+        width:100%;
+    }
+    .Movie_Column{
+        width:100%!important;
+    }
+}

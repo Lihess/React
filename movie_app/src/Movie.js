@@ -33,7 +33,7 @@ function Movie({title, poster, genres, synopsis}){
                 <p className = "Move_Synopsis">
                 <LinesEllipsis
                     text= {synopsis}
-                    maxLine='4'
+                    maxLine='3'
                     ellipsis='...'
                     trimRight
                     basedOn='letters'
