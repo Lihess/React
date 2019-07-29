@@ -1,2 +1,2 @@
 # React
-초보자 React !
+React로 Movie app 만들기
